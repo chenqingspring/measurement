@@ -1,7 +1,10 @@
 <html>
 <head>
-<script src="./jquery.min.js"></script>
-<script src="./scripts.js"></script>
+<meta charset="utf-8">
+<script type="text/javascript" src="./jquery.min.js"></script>
+<script type="text/javascript" src="./tabletop.js"></script>
+<script type="text/javascript" src='./sheetsee.js'></script>
+<script type="text/javascript" src="./scripts.js"></script>
 <style type="text/css">
 body{font-family: Arial, sans-serif;font-size:10px;}
 .axis path,.axis line {fill: none;stroke:#b6b6b6;shape-rendering: crispEdges;}
@@ -13,6 +16,16 @@ text.value{font-size:12px;font-weight:bold;}
 </style>
 </head>
 <body>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+        var URL = "1zmjDANgPTlfbEygjCmESdkW1nsQCp257gkipq64sm3U"
+        Tabletop.init( { key: URL, callback: myData, simpleSheet: true } )
+    })
+    function myData(data) {
+        console.log(data);
+    }
+  </script>
 
 <script type="text/javascript">
 function truncate(str, maxLength, suffix) {
