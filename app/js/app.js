@@ -34,6 +34,6 @@ function retrieveData(data) {
         measurements.push(measurement);
     });
 
-    Measurement.render(measurements, iterations);
+    FIGURE.render(measurements, iterations);
 }
 

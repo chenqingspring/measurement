@@ -1,4 +1,4 @@
-Measurement = (function () {
+FIGURE = (function () {
 
     function render(measurements, iterations) {
         var margin = {top: 40, right: 150, bottom: 0, left: 150},
