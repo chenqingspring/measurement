@@ -1,9 +1,14 @@
 FIGURE = (function () {
 
     function render(measurements, iterations) {
-        var margin = {top: 40, right: 150, bottom: 0, left: 150},
-            width = 600,
-            height = 900;
+        var margin = {
+                top: CONFIG.svgMarginTop,
+                right: CONFIG.svgMarginRight,
+                bottom: CONFIG.svgMarginBottom,
+                left: CONFIG.svgMarginLeft
+            },
+            width = CONFIG.bodyWidth,
+            height = CONFIG.bodyHeight;
 
         var start_year = 203,
             end_year = start_year + iterations;
